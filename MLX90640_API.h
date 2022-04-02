@@ -19,7 +19,8 @@ typedef unsigned int uint32_t;
 extern "C" {
     #define SCALEALPHA 0.000001
 
-    DLL_API typedef struct
+    #pragma pack(1)
+    typedef struct
     {
         int16_t kVdd;
         int16_t vdd25;
